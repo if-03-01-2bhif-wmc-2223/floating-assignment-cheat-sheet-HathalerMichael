@@ -1,17 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-     <title>Floating Assignment - YOUR TITLE HERE</title>
-  </head>
-  <body>
-    <h1>Floating Assignment - Cheat Sheet<h1>
-      <p>This is a (very ugly) placeholder page for your WMC cheat sheet.
-        You can use it in any way suitable to fulfil your task.</p>
-      <ul>
-        This includes:
-        <li>Modify this file as needed</li>
-        <li>Replace the content of this file with your cheat sheet</li>
-        <li>Use it as overview page that links to separate pages for each topic</li>
-        <li>Add a menu bar</li>
-  </body>
+    <head>
+        <meta charset="UTF8">
+        <meta name="viewport" content="width=device=width,initial=scale=1.0"/>
+        <meta name="descritption" content="This is a html file"/>
+        <meta name="keywords" content="Unit01, HTML, CSS"/>
+        <title>Cheat Sheet</title>
+        <style>
+            body{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: black;
+                background-color: lightgray;
+            }
+            
+            h1{
+                font-family: 'Courier New', Courier, monospace;
+                color:chocolate;
+            }
+            h2{
+                font-family: 'Courier New', Courier, monospace;
+                color: brown;
+                font-size: smaller;
+            }
+            section {
+                font-family:'Courier New', Courier, monospace;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1>Shortforms</h1>
+        <section>
+            <p>URL: Uniform Resource locater
+            http(s): hyper text transfer protocol (secure)
+            css: Cascading Style Sheets
+            html: hyper text markup language</p>
+        </section>
+        <h1>URL</h1>
+        <section>
+            <p>URL = scheme ":" ["//" [userinfo "@"] host [":" port]] path ["?" query] ["#" fragment]</p>
+        </section>
+        <h1>Web Server and Browser</h1>
+        <section>
+            <p>CERN (made the Web-Protokoll), Mosaic (a graphical browser, that could display images), Netscape and Navigator (brought Java on the internet), Internet Explorer, World Wide Web Consortium(replace html with Xhtml), XMLHttpRequest, Ajax, web 2.0, WhatWG(developed html5)
+            The resource can be preexisting (File cache), or it can be generated at the time of the request by another program that communicates with the server software (Dynamic cache). Mordern Web Server include their own userland file cach, tailored for a web server
+            The webbrowser connects with the webserver, by requesting a web page using http, than the server read, interpreted and verify the URL, the server responds with the content on the side or an error message, as good the hardware is, that much request can the server handle at the same time. 
+            REST and SOAP, they also as support for WebDAV.</p>
+        </section>
+        <h1>HTML</h1>
+        <section>
+            <p>  Void Elements only have a start tag and no end tag or content. Examples are: !br>, !hr>,... elements
+                Attributes are located in the starttag and provide additional information. They often come in name=value format. Examples are: href="https://www.orf.at".</p>  
+        </section>
+        <h1>IMAGE LADEN</h1>
+        <section>
+            <p>!img src="images?q=jpg" alt="horizont" width="200" height="300">
+                !a href="https://www.w3schools.com">W3schools!/a>---> <p>
+            <p>Statt den Rufzeichen gehört ein grßer als Zeichen eingesetzt</p>
+        </section>
+        <h1>CSS</h1>
+        <section>
+            <p>components of a ccs-File:  selector and other properties like colour, text-align
+            </p>
+        </section>
+        <h2>Selectoren Types</h2>
+        <section>descendant selector:
+            <p>div p {
+               background-color: yellow;
+            }
+            <br>
+            child selector:
+            div > p {
+               background-color: yellow;
+            }
+            <br>
+            adjacent sibling selctor:
+            div + p {
+               background-color: yellow;
+            }
+            <br>
+            general sibling selector:
+            div ~ p {
+               background-color: yellow;
+            }</p>
+        </section>
+        <h2>Aufbau</h2>
+        <section>
+            <p>Bereich {
+                Attribut:Propertiy;
+            }</p>
+        </section>
+        <h2>Pseudo Class</h2>
+        <section>
+            <p>It's used to define a special state of an element, for special events like the user hovers about it:
+            selector: 
+            pseudo-class {
+                property: value;
+            }
+            </p>        
+        </section>
+    </body>
 </html>
