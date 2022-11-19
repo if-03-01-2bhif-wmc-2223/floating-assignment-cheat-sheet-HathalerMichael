@@ -6,7 +6,7 @@ The goal is to host the cheat sheet as web page on Github and access it directly
 
 To achieve this goal, the following preparations are required:
 - Clone your assignment repository (already done, right? ;)
-- Create and checkout a branch named 'gh-pages':
+- Create and checkout a branch named 'gh-pages' :
   - Git CLI ```$ git checkout -b gh-pages``` is a short-hand command for:
 - Create branch named 'gh-pages' in Git
   - Git CLI: ```$ git branch gh-pages```
