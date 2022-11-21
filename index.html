@@ -63,7 +63,7 @@
             <p>components of a ccs-File:  selector and other properties like colour, text-align
             </p>
         </section>
-        <h2>Selectoren Types</h2>
+        <h1>Selectoren Types</h1>
         <section>descendant selector:
             <p>div p {
                background-color: yellow;
@@ -84,13 +84,13 @@
                background-color: yellow;
             }</p>
         </section>
-        <h2>Aufbau</h2>
+        <h1>Aufbau</h1>
         <section>
             <p>Bereich {
                 Attribut:Propertiy;
             }</p>
         </section>
-        <h2>Pseudo Class</h2>
+        <h1>Pseudo Class</h1>
         <section>
             <p>It's used to define a special state of an element, for special events like the user hovers about it:
             selector: 
@@ -98,6 +98,90 @@
                 property: value;
             }
             </p>        
+        </section>
+        <section>
+            <h1>Lists in HTML</h1>
+            <p>There are 3 main types of lists: unorder (bullet points) and ordered (numbers, letters, lathin number,...) and description list (list with a description)
+                We use the <$ol><$/ol> tags for ordered or <$ul><$/ul> for unorderd. The description Lists
+                need the <$dl><$/dl> and also the <&dt><&/dt> for the term and <$dd><$/dd> for the description itself. For each bullet point we now make a <$i><$/li>
+                tag, in the tags above.
+            </p>
+        </section>
+        <section>
+            <h1>Lists in CSS</h1>
+            <p>
+                ul.a {
+                    list-style-type:square;
+                 }
+
+                 list-style-type: give the type of bullet point, like if its a square, cyrcle, roman literal and so on
+            </p>
+            <p>
+                ul.b {
+                    list-style-image: url('my-bullet.png');
+                 }
+
+                 list-style-image: imports the picture of a URL and uses it for the bullet point
+            </p>
+            <p>
+                ul.d {
+                    list-style-position: inside;
+                 }
+
+                 list-style-positon says the position of the point and it can be inside or outside.
+            </p>
+        </section>
+        <section>
+            <h1>Tables in HTML</h1>
+            <p>Tables are like tabellen</p>
+            <p>
+                - a table
+                <$table>
+                <$/table>
+                
+                <br>
+                - a table row
+                <$tr>
+                <$/tr>
+                <br>
+                - a table header
+                <$thead>
+                <$ /thead>
+                <br>
+                - a table header cell
+                <$th>
+                <$/th>
+                <br>
+                - a table body
+                <$tbody>
+                <$/tbody>
+                <br>
+                - a table cell
+                <$td>
+                <$/td>
+                <br>
+                - a table footer
+                <$tfoot>
+                <$/tfoot>
+                <br>
+                - a table footer cell
+                <$tfoot>
+                   <$td>Coffey<$/td>
+                <$/tfoot>
+            </p>
+        </section>
+        <section>
+            <h1>Tables in CSS</h1>
+            <p>
+                table, th, td {
+                    border: 1px solid; -> defines the type and the width of the border<br>
+                    border-color: red; -> the colour of the border<br>
+                    border-radius: 10px; -> to rounden the corners<br>
+                    border-collapse: collapse; -> merges single cells<br>
+                }
+             </p>
+
+            
         </section>
     </body>
 </html>
