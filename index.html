@@ -6,64 +6,43 @@
         <meta name="descritption" content="This is a html file"/>
         <meta name="keywords" content="Unit01, HTML, CSS"/>
         <title>Cheat Sheet</title>
-        <style>
-            body{
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                color: black;
-                background-color: lightgray;
-            }
-            
-            h1{
-                font-family: 'Courier New', Courier, monospace;
-                color:chocolate;
-            }
-            h2{
-                font-family: 'Courier New', Courier, monospace;
-                color: brown;
-                font-size: smaller;
-            }
-            section {
-                font-family:'Courier New', Courier, monospace;
-            }
-        </style>
+        
+        <link rel="stylesheet" href="styles.css" />
     </head>
     
     <body>
-        <h1>Shortforms</h1>
+        <h1>Cheatsheet</h1>
+        <p id="subheadline">Basic Web-Information</p>
         <section>
             <p>URL: Uniform Resource locater
             http(s): hyper text transfer protocol (secure)
             css: Cascading Style Sheets
             html: hyper text markup language</p>
         </section>
-        <h1>URL:</h1>
         <section>
             <p>URL = scheme ":" ["//" [userinfo "@"] host [":" port]] path ["?" query] ["#" fragment]</p>
         </section>
-        <h1>Web Server and Browser</h1>
         <section>
             <p>CERN (made the Web-Protokoll), Mosaic (a graphical browser, that could display images), Netscape and Navigator (brought Java on the internet), Internet Explorer, World Wide Web Consortium(replace html with Xhtml), XMLHttpRequest, Ajax, web 2.0, WhatWG(developed html5)
             The resource can be preexisting (File cache), or it can be generated at the time of the request by another program that communicates with the server software (Dynamic cache). Mordern Web Server include their own userland file cach, tailored for a web server
             The webbrowser connects with the webserver, by requesting a web page using http, than the server read, interpreted and verify the URL, the server responds with the content on the side or an error message, as good the hardware is, that much request can the server handle at the same time. 
             REST and SOAP, they also as support for WebDAV.</p>
         </section>
-        <h1>HTML</h1>
+        <p id="subheadline">HTML</p>
         <section>
             <p>  Void Elements only have a start tag and no end tag or content. Examples are: !br>, !hr>,... elements
                 Attributes are located in the starttag and provide additional information. They often come in name=value format. Examples are: href="https://www.orf.at".</p>  
         </section>
-        <h1>IMAGE LADEN</h1>
         <section>
-            <p>!img src="images?q=jpg" alt="horizont" width="200" height="300">
-                !a href="https://www.w3schools.com">W3schools!/a>---> <p>
-            <p>Statt den Rufzeichen gehört ein grßer als Zeichen eingesetzt</p>
+            <p><code>&lt;img src="images?q=jpg" alt="horizont" width="200" height="300"&gt;</code>
+                <code>&lt;a href="https://www.w3schools.com">W3schools!/a&gt;</code><p>
         </section>
-        <h1>CSS</h1>
+        <p id="subheadline">CSS</p>
         <section>
             <p>components of a ccs-File:  selector and other properties like colour, text-align
             </p>
         </section>
-        <h1>Selectoren Types</h1>
+        <p id="subheadline">Selectoren Types</p>
         <section>descendant selector:
             <p>div p {
                background-color: yellow;
@@ -84,13 +63,13 @@
                background-color: yellow;
             }</p>
         </section>
-        <h1>Aufbau</h1>
+        <p id="subheadline"></p>
         <section>
             <p>Bereich {
                 Attribut:Propertiy;
             }</p>
         </section>
-        <h1>Pseudo Class</h1>
+        <p id="subheadline"></p>
         <section>
             <p>It's used to define a special state of an element, for special events like the user hovers about it:
             selector: 
@@ -100,15 +79,15 @@
             </p>        
         </section>
         <section>
-            <h1>Lists in HTML</h1>
+            <p id="subheadline">Lists in HTML</p>
             <p>There are 3 main types of lists: unorder (bullet points) and ordered (numbers, letters, lathin number,...) and description list (list with a description)
-                We use the <$ol><$/ol> tags for ordered or <$ul><$/ul> for unorderd. The description Lists
-                need the <$dl><$/dl> and also the <&dt><&/dt> for the term and <$dd><$/dd> for the description itself. For each bullet point we now make a <$i><$/li>
+                We use the <code>&lt;ol&gt;</code> tags for ordered or <code>&lt;ul&gt;</code> for unorderd. The description Lists
+                need the <code>&lt;dl&gt;</code> and also the <code>&lt;dt&gt;</code> for the term and <code>&lt;dd&gt;</code> for the description itself. For each bullet point we now make a <$i><$/li>
                 tag, in the tags above.
             </p>
         </section>
         <section>
-            <h1>Lists in CSS</h1>
+            <p id="subheadline">Lists in CSS</p>
             <p>
                 ul.a {
                     list-style-type:square;
@@ -132,46 +111,36 @@
             </p>
         </section>
         <section>
-            <h1>Tables in HTML</h1>
+            <p id="subheadline">Tables in HTML</p>
             <p>Tables are like tabellen</p>
             <p>
                 - a table
-                <$table>
-                <$/table>
-                
+                <code>&lt;table&gt;</code>
                 <br>
                 - a table row
-                <$tr>
-                <$/tr>
+                <code>&lt;tr&gt;</code>
                 <br>
                 - a table header
-                <$thead>
-                <$ /thead>
+                <code>&lt;thead&gt;</code>
                 <br>
                 - a table header cell
-                <$th>
-                <$/th>
+                <code>&lt;th&gt;</code>
                 <br>
                 - a table body
-                <$tbody>
-                <$/tbody>
+                <code>&lt;tbody&gt;</code>
                 <br>
                 - a table cell
-                <$td>
-                <$/td>
+                <code>&lt;td&gt;</code>
                 <br>
                 - a table footer
-                <$tfoot>
-                <$/tfoot>
+                <code>&lt;foot&gt;</code>
                 <br>
                 - a table footer cell
-                <$tfoot>
-                   <$td>Coffey<$/td>
-                <$/tfoot>
+                <code>&lt;tfoot&gt;</code>
             </p>
         </section>
         <section>
-            <h1>Tables in CSS</h1>
+            <p id="subheadline">Tables in CSS</p>
             <p>
                 table, th, td {
                     border: 1px solid; -> defines the type and the width of the border<br>
@@ -182,7 +151,7 @@
              </p>            
         </section>
         <section>
-            <h1>Box-Model</h1>
+            <p id="subheadline">Box-Model</p>
             <p>
                 block elements: don’t start from a new line and don’t have top and bottom margins <br>
                 inline elements: always start in a new line and have top and bottom margins. <br>
@@ -191,7 +160,7 @@
             </p>
         </section>
         <section>
-            <h1>Classes and ID's</h1>
+            <p id="subheadline">Classes and ID's</p>
             <p>
                 selector for a certain class:  <br>
                 p.class {   <br>
@@ -205,7 +174,7 @@
                  } <br>
                 p id="blue">Hello World /p <br>
 
-                 <h1>float</h1>
+                 <p id="subheadline">float</p>
                  float: body { <br>
                     float:right; <br>
                  } <br>
@@ -217,26 +186,166 @@
             </p>
         </section>
         <section>
-            <h2>jpg</h2>
+            <p id="subheadline">Image Formats</p><br>
+            <p>jpg</p>
             <li>ommpressionsgrad kann eingestellt werden, Bilder können schneller geladen werden</li>
-            <li> bei zu starker Kommpressions kann es zu Qualitätsverlust kommen, 16 Millionen Farben möglich</li>
+            <li> bei zu starker Kommpressions kann es zu Qualitätsverlust kommen, 16 Millionen Farben möglich</li><br>
 
-            <h2>gif</h2>
+            <p>gif</p>
             <li>steht für graphical interchange format, häufig animiert in einer Endlosschleife</li>
-            <li>das erste halbwegs kompremierbare Format, 256 Farben möglich</li>
+            <li>das erste halbwegs kompremierbare Format, 256 Farben möglich</li><br>
 
-            <h2>png</h2>
+            <p>png</p>
             <li>steht portable network graphics, keine Animationen möglich, bei Kommpession kein Qualitätsverlust, </li>
-            <li>verbrauchen wenig Speicher, Hintergrund lässt sich transparent gestalten, 16,7 mio Farben mögich</li>
-            <h2>ico</h2>
-            <li>wird von Windows für icons verwende, in einer Datei mehrer Bilder, 256×256 Pixel, 16 oder mehr Farben mögich </li>
-            <h2>svg</h2>
+            <li>verbrauchen wenig Speicher, Hintergrund lässt sich transparent gestalten, 16,7 mio Farben mögich</li><br>
+            <p>ico</p>
+            <li>wird von Windows für icons verwende, in einer Datei mehrer Bilder, 256×256 Pixel, 16 oder mehr Farben mögich </li><br>
+            <p>svg</p>
             <li>steht für scalable vector graphics, Vektrografik, mathematisch definierte Bilder, die sich aus Punkten</li>
             <li>und Linien zusammensetzten, ideal für Logos und komplexe Online grafiken, sind in XML geschrieben, so kann Google</li>
-            <li>Bilder über den Quellcode suchen</li>
-            <h2>mpg/mpa</h2>
-            <li>von der Firma mpeg, für Videodateien, unterstützt Animationen und enfache Bilder, kompressierbar </li>
+            <li>Bilder über den Quellcode suchen</li><br>
+            <p>mpg/mpa</p>
+            <li>von der Firma mpeg, für Videodateien, unterstützt Animationen und enfache Bilder, kompressierbar </li><br>
 
+        </section>
+        <section>
+            <p id="subheadline">Gradians</p>
+            <p>
+                Mit Gradients kann man Farbübergänge zwischen mehren Farben erstellen, 
+                Dazu gibt es 3 Arten:
+                
+            </p>
+            <ol>
+                <li>Lineare Gradianten(von oben nach unten, links nach rechts, usw.)</li>
+                <li>Radial Gradiaten(geht von Center aus)</li>
+                <li>Conic Gradianaten(rotiert um das Cnenter herum)</li>
+            </ol>
+            <p>background-image: linear-gradient(direction, color-stop1, color-stop2, ...); -> linear </p>
+            <p>Mehrere Variaten</p>
+            <p>#grad {<br>
+                background-image: linear-gradient(red, yellow);<br>
+              }</p><br>
+            <p>#grad {<br>
+                background-image: linear-gradient(to right, red , yellow);<br>
+              }</p><br>
+            <p>#grad {<br>
+                background-image: linear-gradient(180deg, red, yellow);<br>
+              }</p><br>
+            
+            <p>background-image: radial-gradient(shape size at position, start-color, ..., last-color); ->radial</p>
+            <p>
+                #grad {<br>
+                    background-image: radial-gradient(red, yellow, green);<br>
+                  }<br>
+            </p>
+            <p>
+                #grad {<br>
+                    background-image: radial-gradient(red 5%, yellow 15%, green 60%);<br>
+                  }<br>
+            </p>
+            <p>
+                #grad {<br>
+                    background-image: radial-gradient(circle, red, yellow, green);<br>
+                  }<br>
+            </p>
+            <p>Der size-Operator ist entweder: 
+                closest-side
+                farthest-side
+                closest-corner
+                farthest-corner
+            </p>
+            <p>
+                #grad {<br>
+                    background-image: repeating-radial-gradient(red, yellow 10%, green 15%);<br>
+                  }<br>
+            </p>
+            <p>background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...); -> conic</p>
+            <p>
+                #grad {
+                    background-image: conic-gradient(red, yellow, green);
+                  }<br>
+            </p>
+            <p>
+                #grad {
+                    background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+                  }<br>
+            </p>
+            <p>
+                #grad {
+                    background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+                    border-radius: 50%;
+                  }
+            </p>
+            <p id="subheadline">Corners</p>
+            <p>border-radius ermöglicht einem abgerundete Kanten</p>
+            <p>
+                #corner {<br>
+                    border-radius: 25px;}
+            </p>
+            <p>Man kann aber auch nur einzelen Ecken abrunden, oder andere mehr andere weniger</p>
+            <p>
+                #rcorners1 {<br>
+                    border-radius: 15px 50px 30px 5px;}
+            </p>
+            <p id="subheadline">Shadows</p>
+            <p>Es gibt 2 Arten von Schatten Effekten in CSS: Box und Text Schatten</p>
+            <p>Textschatten:<br></p>
+            <p>h1 {<br>
+                text-shadow: 0 0 3px #FF0000;}
+              </p>
+            <p>Boxschatten:<br></p>
+            <p>div {
+                box-shadow: 10px 10px(Normale Schatten größe)  5px(blur) 12px (spread) lightblue;
+                }</p>
+            <p id="subheadline">Transformation</p>
+            <p>Mit dem Transform Argument stehen einem mehere Methoden zur Verfügung:</p>
+            <ol>
+                <li>translate: bewegt das Objekt von einer Stelle an die neuen Kordinaten </li>
+                <li>rotate: dreht das Objekt </li>
+                <li>scale/X/Y: vergrößert/verkleinert das Objekt in beide/X/Y Richtung</li>
+                <li>skew/X/Y: verdreht das Objekt in beide/X/Y Richtung</li>
+                <li>matrix: Die Marix Funktion vereint alle der transform Elemete und braucht 6 Parameter</li>
+            </ol>
+            <p>div {<br>
+                transform: translate(50px, 100px);}
+              </p>
+            <p id="subheadline">Animationen</p>
+            <p>Mit CSS-Animationen lässt sich der Style von Elementen ändern, dazu wird das Ausgangsframe mit @keyframe gekennzeichnet</p>
+            <p>@keyframes example {<br>
+                from {background-color: red;}<br>
+                to {background-color: yellow;}<br>
+              }<br>
+              
+              /* The element to apply the animation to */<br>
+              div {<br>
+                width: 100px;<br>
+                height: 100px;<br>
+                background-color: red;<br>
+                animation-name: example;<br>
+                animation-duration: 4s;<br>
+              }</p>
+              <p>Mit Prozent Angaben statt den from, to statements, lassen sich mehrere Effekte machen</p>
+              <p>Mit animation-delay und animation-duration können Dauer und delay bestimmt werden</p>
+              <p>Mit animation-iteration-count lässt sich angeben wie oft eine Animation durchgeführt wird, mit infite wird es für imemr durchgeführt.</p>
+              <p id="subheadline">Transition</p>
+            <p>Mit Transition lassen sich in bestimmten Zeiträume Werte von Objekten ändern</p>
+            <p>Um diese zu Benutzen muss man die Dauer und die Eigenschaft angeben</p>
+            <p>div {<br>
+                width: 100px;<br>
+                height: 100px;<br>
+                background: red;<br>
+                transition: width (Eigenschaft) 2s(Dauer);<br>
+              }</p>
+            <p>Mit hover kann dies dann ausgenützt werden</p>
+            <p>
+                ease- spezifiziert einen Übergangseffekt mit einem langsamen Start, dann schnell, dann langsam enden (dies ist die Vorgabe)
+                linear- gibt einen Übergangseffekt mit der gleichen Geschwindigkeit von Anfang bis Ende an
+                ease-in- legt einen Übergangseffekt mit langsamem Start fest
+                ease-out- legt einen Übergangseffekt mit langsamem Ende fest
+                ease-in-out- legt einen Übergangseffekt mit langsamem Start und Ende fest
+                cubic-bezier(n,n,n,n)- lässt Sie Ihre eigenen Werte in einer kubischen Bezier-Funktion definieren
+            </p>
+            <p>Mit transition-delay lässt sich eine Verzögerung erstellen</p>
         </section>
     </body>
 </html>
